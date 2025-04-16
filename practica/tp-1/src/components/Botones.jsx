@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Botones = ({texto,color}) => {
-    const estilos = {color:'white',backgroundColor:color, padding:'10px'};
-    return(
-        <button style={estilos}>{texto}</button>
+const Botones =({texto,color}) => {
+    let estilox = {display:'inlineFlex',
+        padding:'10px 15px',
+        backgroundColor:color,
+        color:'#fff',
+        border:'none',
+        borderRadius:'4px',
+        cursor: 'pointer',
+        textDecoration:'none',
+        width:'100px'};
+
+    return (
+        <div className='botonx' style={estilox}>{texto}</div>
     )
 }
 

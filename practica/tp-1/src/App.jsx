@@ -1,16 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import {Botones} from './components/Botones'
+
+import ListaProductos from './components/ListaProductos'
+import Botones from './components/Botones'
+import Tarjeta from './components/Tarjeta';
 
 function App() {
+  let productos = ["manzana","pera","jamon","tutankamon","otro","el ultimo"];
+
   return (
-    <>
-      <div>
-        <Botones></Botones>
-      </div>
-    </>
+    <div>
+    
+      <ListaProductos productos={productos} />
+      <Botones texto="Aceptar" color="green"/>
+      <Botones texto="Cancelar" color="red"/>
+      <Botones texto="Ver mas" color="blue"/>
+
+      <Tarjeta titulo="gola" descripcion="gosfnl" botonColor="green" botonTexto="aceptar"/>
+
+      <hr />
+
+    </div>
+    
   )
 }
 
