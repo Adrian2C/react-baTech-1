@@ -2,9 +2,9 @@ import '../style/estilosPersonalizados.css';
 
 function EquipoTalentoLab({ nombre, rol, img }) {
     const estilos = {
-        width: '300px',
+        
         height: '100px',
-        /* backgroundColor: 'white', */
+        
         color:'red',
         padding: '20px',
         border: '1px solid #ccc',
