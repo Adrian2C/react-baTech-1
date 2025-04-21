@@ -1,8 +1,28 @@
-.tarjeta{
-    background-color:grey;
-    width: 250px;
+Main {
+  h2 {
+    font-size: 35px;
+  }
+  .contenedor-tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .tarjeta-equipo {
+    background-color: #a6f3f3;
+    flex-direction: column;
+    border: 1px solid black;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .nameCard {
+    font-size: 30px;
+    color: #254595;
+  }
 }
 
-h2{
-    font-size:30px;
+.tarjetaProyecto {
+  background-color: #682f2f;
 }

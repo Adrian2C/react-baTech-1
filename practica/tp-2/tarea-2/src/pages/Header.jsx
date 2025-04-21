@@ -3,7 +3,6 @@ import React from 'react';
 function Header() {
     return (
         <header style={{
-            backgorundColor: '#4CAF50',
             padding: '10px',
             textAlign: 'center',
             color: 'white'
