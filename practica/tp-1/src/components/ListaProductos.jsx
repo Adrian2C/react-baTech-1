@@ -1,10 +1,17 @@
-import React from 'react'
+//se crea una variable que se asigne el valor del parametro de cada producto
+import React from "react";
 
-const Productos = ({producto}) => {
-    let ListaProductos = ["manzana","pera","jamon"];
-    return(
+const ListaProductos = ({ productos }) => {
+    return (
         <ol>
-        {ListaProductos.map}
+            {
+                productos.map((producto, index) => (
+                    <li key={index}>
+                        {producto}
+                    </li>
+                ))}
         </ol>
-    )
-}
+    );
+};
+
+export default ListaProductos;
