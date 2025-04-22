@@ -15,14 +15,19 @@ function Main() {
     const proyecto = [
         {
             id: 1,
-            nombre: 'Silvia',
-            descripcio: 'jamon jamon jmaon jamona mjaon jamon jamon'
+            titulo: 'WebKit App de Navegacion multiple IA',
+            descripcion: 'jamon jamon jmaon jamona mjaon jamon jamon'
         },
         {
             id: 2,
-            nombre: 'ssaa',
-            descripcio: 'jamon jamon jmaon jamona mjaon jamon jamon'
-        }
+            titulo: 'Desarrollo de AppWeb',
+            descripcion: 'jamon jamon jmaon jamona mjaon jamon jamon'
+        },
+        {
+            id: 3,
+            titulo: 'Diseño UX/UI',
+            descripcion: 'jamon jamon jmaon jamona mjaon jamon jamon'
+        },
     ]
     const equipo = [
         {
@@ -73,12 +78,12 @@ function Main() {
                     )
                 }
             </div>
-
+            <h3 >Proyectos</h3>
             <div className="contenedor-tarjeta" style={estilos}>
                 {
-                    proyectos.map((proyecto) =>
-                        <TarjetaProyecto key={proyecto.id} nombre={proyectos.nombre}
-                            descripcion={proyectos.descripcion}
+                    proyecto.map((trabajos) =>
+                        <TarjetaProyecto key={trabajos.id} titulo={trabajos.titulo}
+                            descripcion={trabajos.descripcion}
                         />
                     )
                 }

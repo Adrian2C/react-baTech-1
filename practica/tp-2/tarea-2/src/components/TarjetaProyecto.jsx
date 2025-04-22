@@ -15,12 +15,12 @@ function TarjetaProyecto({ titulo, descripcion }) {
     
 
     const handleClick = (titulo) => {
-        conole.log(`Explorando proyecto ${titulo}`)
+        console.log(`Explorando proyecto ${titulo}`)
     }
 
     return (
+            
         <div style={estilos}>
-            <h3>jamon</h3>
             <div className="tarjeta-equipo" >
                 <h2 className="nameCard">{titulo}</h2>
                 <p>{descripcion}</p>
