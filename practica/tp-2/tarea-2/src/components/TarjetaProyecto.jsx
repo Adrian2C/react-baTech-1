@@ -1,51 +1,34 @@
 import React from 'react'
 import '../style/estilosPersonalizados.css';
-import proy1 from '../assets/proyecto-1.jpg';
+import Boton from './Button';
 
-const TarjetaProyecto = () => {
-    const proyecto=[
-        {
-            id:1,
-            nombre:"",
-            descripcion:"",
-            img:proy1,
-            botonTexto:"Explorar Proyecto",
-        },
-        {
-            id:2,
-            nombre:"",
-            descripcion:"",
-            img:proy2,
-            botonTexto:"Explorar Proyecto",
-        },
-        {
-            id:3,
-            nombre:"",
-            descripcion:"",
-            botonTexto:"Explorar Proyecto",
-        },
-    ]
+/*import proy1 from '../assets/proyecto-1.jpg'; */
+/* import proy2 from '../assets/proyecto-1.jpg';
+import proy3 from '../assets/proyecto-1.jpg'; */
 
-  return (
-    <div className='tarjetaProyecto' style={{
-            padding: '20px', 
-            display: 'flex',
-            flexDirection: 'column' ,
-    }}>
-      <h2>Nuestros Proyectos</h2>
+function TarjetaProyecto({ titulo, descripcion }) {
+    const estilos = {
+        height: '300px',
+        width: '100%',
+        backgroundColor: 'blue'
+    }
+    
 
-      {/* <div className="contenedor-tarjeta">
-                {
-                    equipo.map((team) =>
-                        <EquipoTalentoLab key={team.id} nombre={team.nombre}
-                            img={team.img}
-                            rol={team.rol}
-                        />
-                    )
-                }
-            </div> */}
-    </div>
-  )
+    const handleClick = (titulo) => {
+        conole.log(`Explorando proyecto ${titulo}`)
+    }
+
+    return (
+        <div style={estilos}>
+            <h3>jamon</h3>
+            <div className="tarjeta-equipo" >
+                <h2 className="nameCard">{titulo}</h2>
+                <p>{descripcion}</p>
+
+                <Boton texto="explorar Proyecto" onClick={() => handleClick(titulo)} />
+            </div>
+        </div>
+    )
 }
 
 export default TarjetaProyecto
