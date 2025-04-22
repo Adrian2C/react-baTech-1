@@ -10,7 +10,7 @@ import img4 from '../assets/avatar-4.jpg';
 
 function Main() {
     const estilos = {
-        backgroundColor: 'green',
+        backgroundColor: '#454546',
     }
     const proyecto = [
         {
@@ -62,8 +62,7 @@ function Main() {
             padding: '20px',
             /* height: '720px',  */
             width: '1024px',
-            border: '1px dashed red',
-            backgroundColor: 'red',
+            backgroundColor: '#548454',
             display: 'flex',
             flexDirection: 'column',
         }}>

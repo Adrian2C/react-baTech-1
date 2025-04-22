@@ -7,11 +7,6 @@ import Boton from './Button';
 import proy3 from '../assets/proyecto-1.jpg'; */
 
 function TarjetaProyecto({ titulo, descripcion }) {
-    const estilos = {
-        height: '300px',
-        width: '100%',
-        backgroundColor: 'blue'
-    }
     
 
     const handleClick = (titulo) => {
@@ -20,8 +15,8 @@ function TarjetaProyecto({ titulo, descripcion }) {
 
     return (
             
-        <div style={estilos}>
-            <div className="tarjeta-equipo" >
+        <div className="contenedorTarjeta">
+            <div className="tarjetaProyecto" >
                 <h2 className="nameCard">{titulo}</h2>
                 <p>{descripcion}</p>
 

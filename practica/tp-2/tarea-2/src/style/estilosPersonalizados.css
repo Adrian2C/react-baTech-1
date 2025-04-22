@@ -22,7 +22,29 @@ Main {
     color: #254595;
   }
 }
-
-.tarjetaProyecto {
-  background-color: #682f2f;
+.contenedorTarjeta {
+  padding: 10px;
+  cursor:pointer;
+  .tarjetaProyecto {
+    background-color: #ffc0cb;
+    color: black;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    &:hover{
+      background:#f8a5b3;
+    }
+    button:hover{
+      background:grey;
+      color:black;
+      border:1px solid black;
+      font-weight: 700;
+      
+    }
+  }
 }
